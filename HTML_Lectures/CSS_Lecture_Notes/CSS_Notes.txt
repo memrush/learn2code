@@ -1,0 +1,339 @@
+CSS borders have properties like style, color and width.
+
+<style>
+    .example {
+        border-color: red;
+        border-width: 5px;
+        border-style: solid;
+    }
+</style>
+
+Use border-radius property to round out the corners of the border.
+    
+    border-radius: 10px;
+
+You can also use percentage to specify the border-raidus.
+
+    border-radius: 50%;
+
+You can set an element's background color with the background-color property.
+
+    background-color: black;
+
+You can use the id attribute to style a single element.
+
+*You can style id attributes, however, unlike classes an id is not reusable and should only be applied to one element.
+
+    #cat-photo-element {
+        background-color: silver;
+    }
+
+All HTML elements are essentially little rectangles.
+
+There are 3 important properties that control the space that surrounds each HTML element: padding, border, and margin.
+
+padding: controls the amount of space between the element's content and its border.
+margin: controls the amount of space between an element's border and surrounding elements.
+
+Negative Margin
+
+you can set an element's margin to a neative value, the element will grow larger.
+
+Padding control
+CSS allows you to control the padding of all four sides individually:
+
+    padding-top:
+    padding-bottom:
+    padding-left:
+    padding-right:
+
+Same as padding you can also do the same for margins:
+
+Consolidating all padding and margin properties to one line:
+
+    padding: 10px 20px 10px 20px;
+    *clockwise starting from the top
+    margin: 10px 20px 10px 20px;
+
+id or class attributes are specified to style elements, but you can also use another selector to target attributes.
+
+    [type='radio'] {
+
+    }
+
+Absolute vs Relative Units
+
+    Relative units: 'em or rem' are relative to another length value.
+        example: If you use it to set the font-size property itself, it's relative to the parent's font-size.
+
+        em: is relative to the parent's font-size.
+        rem: is relative to the root font size of the HTML document.
+
+    Absolute units: 'px, in, and mm' are tied to physical units of length and depending on the end-user's screen resolution things can look different.
+
+You can use !important on a style element to override all values.
+
+    p {
+        color: pink !important;
+    }
+
+CSS Variables are a powerful way to change many CSS style properties at once by changing only one value.
+
+Declaring CSS varible
+    <style>
+        .penguin{
+        --penguin-belly: white;
+        }
+    </style>
+
+Assigning CSS Variables
+
+    .penguin-top {
+        background: var(--penguin-belly);
+    }
+
+*You can assign a css variable to multiple css properties.
+
+*You can set a fallback value incase there's an error with the initial CSS variable value.
+
+    .penguin-top {
+        background: var(--penguin-belly, black);
+    }
+
+Some browsers like Internet Explorer doesn't support CSS variables.
+    Simply give it a default CSS element before the CSS variable.
+
+Often CSS Variables are defined in the :root element selector.
+
+    :root {
+        --penguin-belly: white;
+    }
+
+Use a media query to change a variable.
+
+    @media (max-width: 350px) {
+        :root {
+            --penguin-size: 200px;
+            --penguin-skin: black;
+        }
+
+    }
+
+Above, when the browser passes the max-width break point, it will alter the CSS variable defined inside :root to 200px.
+
+Text align:
+
+    text-align: justify; spaces the text so that each line has equal width.
+
+    text-align: center; centers the text
+
+    text-align: right; right-aligns the text
+
+    And text-align: left; (the default) left-aligns the text.
+
+Fonts:
+    font-weight: bold;
+        HTML: <strong></strong> - bold tag
+    text-decoration: underline;
+        HTML: <u></u> - underline tag
+    text-decoration: line-through;
+        HTM: <s></s> - strike-through tag
+    font-style: italic;
+        HTML: <em></em> - italicized
+
+Box-shadow property applies one or more shadows to an element.
+
+    offset-x (how far to push the shadow horizontally from the element),
+    offset-y (how far to push the shadow vertically from the element),
+    blur-radius,
+    spread-radius and
+    color, in that order.
+
+Opacity property used to adjust the opacity or transparency for an item.
+    opacity: 0.7;
+    *values from 0 to 1, 1 being opaque and 0 being completely transparent.
+
+text-transform property is used to change the appearance of text.
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-transform: capitalize;
+    text-transform: initial;
+    text-transform: inherit;
+    text-transform: none;
+
+    line-height: 25px; <-- sets height between each line.
+
+    A pseudo-class :hover can be added to selectors, in order to select a specific state of the element.
+        a {
+            color: black;
+        }
+
+        a:hover {
+            color: blue;
+        }   
+
+    Above, :hover is added to anchor selector so the color changes to blue whenever the user's cursor is hovered over the targeted anchor.
+
+    CSS treats each HTML element as its own box, which is usually referred to as the CSS Box Model.
+    Block-level items automatically start on a new line (headings, paragraphs, and divs) while
+    Inline items sit within surrounding content (like images or spans)
+
+
+Position: relative, absolute, fixed, sticky;
+    
+    When CSS property, position, is set to relative, it allows you to specify how CSS should move it relative to its current position.
+
+        p {
+            position: relative;
+            bottom: 10px;
+        }
+
+    Lock an Element to its parent with absolute positioning.
+
+        p {
+            position: absolute;
+        }
+
+    Lock an Element to the Browser Window with Fixed Positioning.
+
+        p {
+            position: fixed;
+        }
+    Push Elements Left or Right with the float Property. (Commonly used with width property to specify about much horizontal space is require for element to float)
+
+        p {
+            float: left or right;
+            width: 50%;
+        }
+Change the position of overlapping elements with the z-index Property.
+    z-index: 1; (higher the z-index value the higher it will move in the stack than those with lower values)
+
+
+Center an Element Horizontally Using the margin Property.
+
+Another Positioning technique is to center a block element horizontally using margin property set to 'auto'
+
+*inline items can be altered to block items using the 'display:' property with value 'block'
+    for example: img is inline by default
+        img {
+            display: block;
+            margin: auto;
+        }
+
+Adjusting Hue of a color using hsl(0, 100%, 50%)
+
+Use the CSS transform: scale() property to change the size of an element
+    
+    p {
+        transform: scale(2);
+    }
+
+transform: skewX() property
+
+    p {
+        transform: skewX(-32deg); <-- skews the element horizontally across X-axis
+    }
+transform: skewY() property
+
+    p {
+        transform: skewY(-32deg); <-- skews the element vertically across Y-axis
+    }
+
+Creating Graphics using CSS:
+     ::before <-- first child of the selected element
+     ::after <-- last child of the selected element
+
+    You need to use the content: property, which is used to add text or photo to selected element, in conjunction with ::before or ::after psuedo-elements.
+        content: ""; <-- nothing
+        content: "a string"; <--string
+        content: url(path); <-- image
+
+Linear Gradient:
+
+    background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);
+        gradient_direction: is the direction from which color trasition starts - it can be stated as a degree, where '90deg'
+        makes a horizontal gradient (left to right)
+
+Repeating Linear Gradient:
+    repeating-linear-gradient(gradient_direction, color 1, color 2, color 3, ...);
+
+
+How the CSS @keyframes and animation Properties Work
+
+    #anim {
+        animation-name: colorful;
+        animation-duration: 3s;
+        animation-fill-mode: forwards; <--- prevents animation from reverting back to original state after 3s
+    }
+
+
+    @keyframe colorful {
+        0% {
+            background-color: blue;
+        }
+
+        100% {
+            background-color: yellow;
+        }
+    }
+
+Using relative or fixed positioning for animation:
+    #anim {
+        position: relative;
+        animation-name: colorful;
+        
+    }
+
+    @keyframe colorful {
+        0% {
+            background-color: blue;
+            top: 0px;
+        }
+
+        50% {
+            background-color: green;
+            top: 50px;
+            opacity: 0.1;
+        }
+        100% {
+            background-color: red;
+            top: 0px;
+        }
+    }
+
+Addition, you can use opacity to fade item during animation.
+
+animation-iteration-count: property allows you to control how many times you would like to loop through the animation.
+    animation-iteration-count: 3; <-- loops 3 times
+    animation-iteration-count: infinite; <-- loops infinitely
+
+    animation-timing-function: ease, ease-out, ease-in, linear
+
+Pseudo selectors:
+    :hover
+    li:first-child
+    li:last-child
+    li:nth-child(n) <--- specify the n with a number value of the child
+    li:only-child <--- only selects the only-child of all the li elements
+    a:link <-- unvisited link
+    a:visited <-- visited link
+    ::before <-- first child of the selected element
+    ::after <-- last child of the selected element
+
+Advanced selectors:
+
+    h2 + a {} <-- means any anchor tag followed by h2 tag
+
+    h2 ~ a {} <-- means any anchor tag followed by h2 tag within the same parent element
+
+    ul > li {} <-- every li inside ul
+
+    ul li {}
+
+    attribute selector
+
+    h2[type=textarea] {}
+    p[class=example] {}
+
+
+    

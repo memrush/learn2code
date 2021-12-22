@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<!--This is the head of the website-->
+<head>
+    <title>UberIT</title>
+</head>
+
+<!--This is the body of the website-->
+<body>
+    <!--Header Section (Example to linking pages)--> 
+    <header>
+        <a href="/Youtube.html">About Us</a>
+    </header>
+    <!--Header Tags-->
+    <h1>This is the website for UberIT App Concept.</h1>
+    <h2>This is the website for UberIT App Concept.</h2>
+    <h3>This is the website for UberIT App Concept.</h3>
+    <h4>This is the website for UberIT App Concept.</h4>
+    <h5>This is the website for UberIT App Concept.</h5>
+    <h6>This is the website for UberIT App Concept.</h6> 
+    <!--Paragraph Tags-->
+    <p>This is a business concept for Uber.</p>
+    <p>We will take over the MSP space.</p>
+    <p>Certified personal IT at your doorstep.</p>
+    <!--Anchor Tag-->
+
+    <a href="https://www.instagram.com/_paul.0o" target="_blank">Instagram to my profile.</a>
+
+    <!--Embedded Video Tag-->
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/FNGoExJlLQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <!--Image Tag-->
+    <img src="https://appliance-standards.org/sites/default/files/laptopcomputer_0.jpg" alt="Picture of an Apple laptop" width="400" height="315">
+
+    <!--Unordered Lists-->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!--Ordered Lists-->
+    <ol>
+        <li>Python</li>
+        <li>PHP</li>
+        <li>SQL</li>
+        <li>Ruby</li>
+    </ol>
+
+    <!--Form Tag-->
+    <!--method="GET"-->    
+    <form action="" method="GET">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email">
+        </div>
+
+    <!--Dropdown Tag-->
+    <div>
+        <select>
+            <option value="Honda">Honda</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Kia">Kia</option>
+            <option value="Hyundai">Hyundai</option>
+        </select>
+    </div>
+    <!--Textarea Tag-->
+    <div>
+        <textarea name="message" id="message" cols="100" rows="10">Please enter a description.</textarea>
+    </div>
+    <!--Submit Button-->
+        <input type="submit" value="Click me">
+    
+    </form>
+
+    <!--method="UPDATE"-->
+    <form action="/" method="UPDATE">
+        <label for="theinput">Input here:</label>
+        <input type="text" name="name">
+    </form>
+
+    <!--method="DELETE"-->
+    <form action="/" method="DELETE">
+        <label for="theinput">Input here:</label>
+        <input type="text" name="name">
+    </form>
+
+    <!--/ means homepage-->
+    <!--/about means example.com/about-->
+
+    <!--Table Tag-->
+    <table>
+        <!--Table Header-->
+        <thead>
+            <!--Table Row-->
+            <tr>
+                <!--Table Headers-->
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <!--Table Body-->
+        <tbody>
+            <!--Table Row-->
+            <tr>
+                <!--Table Datas-->
+                <td>John</td>
+                <td>John@gmail.com</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <!--Table Datas-->
+                <td>Paul</td>
+                <td>Paul@gmail.com</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <!--Table Datas-->
+                <td>David</td>
+                <td>David@gmail.com</td>
+                <td>29</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--Horizontal Row "Draws a horizontal line across the page"-->
+    <hr>
+
+    <p>Gibberish (IGNORE)</p>
+    <p>Gibberish (IGNORE)</p>
+    <p>Gibberish (IGNORE)</p>
+    <p>Gibberish (IGNORE)</p>
+    <p>Gibberish (IGNORE)</p>
+    <p>Gibberish (IGNORE)</p>
+    <p>Gibberish (IGNORE)</p>
+    <p>Gibberish (IGNORE)</p>
+    <p>Gibberish (IGNORE)</p>
+
+</body>
+
+
+<!--audio tag-->
+
+<audio id="meowClip" controls>
+    <source src="audio/meow.mp3" type="audio/mpeg">
+    <source src="audio/meow.ogg" type="audio/ogg">
+  </audio>
+
+<!--grouping of radio buttons-->
+<form>
+    <fieldset> <!--fieldset tag is used to wrap the radio buttons-->
+      <legend>Choose one of these three items:</legend> <!--legend is to give description for the grouping-->
+      <input id="one" type="radio" name="items" value="one">
+      <label for="one">Choice One</label><br>
+      <input id="two" type="radio" name="items" value="two">
+      <label for="two">Choice Two</label><br>
+      <input id="three" type="radio" name="items" value="three">
+      <label for="three">Choice Three</label>
+    </fieldset>
+  </form>
+
+  <!--time tag is an inline element that wraps date or time on a page-->
+  <time datetime="2013-02-13"></time> <!--datetime attr holds a valid format of date when accessed by assist devices-->
+  <!--Making links navigable with HTML access keys-->
+
+  <button accesskey="b">Important Button</button> <!--allows users to navigate the page using keyboard only alt+shift+"accesskey"-->
+
+  <!--tabindex attribute-->
+
+  <div tabindex="0"></div> <!--tabindex value of 0 means its the default-->
+  <div tabindex="-1"></div> <!--negative value of tabindex means it's not tabbable-->
+  <div tabindex="1"></div> <!--any positive number can be set and tabs throughout the page in numeric order-->
