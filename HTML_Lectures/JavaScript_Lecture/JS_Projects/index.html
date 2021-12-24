@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="css/style.css" rel="stylesheet">
+            <title>Project 1</title>
+        </head>
+        <body>
+            <div class="content">
+                <section id="challenge1" class="age">
+                    <h1 class="challenge1 title">Challenge 1&colon;&nbsp;Your Age in Days</h1>
+                    <div class="challenge1 buttons">
+                        <button class="challenge1 clickme" onclick="ageDays()">Click Me</button>
+                        <button class="challenge1 reset" onclick="reset()">Reset</button>
+                    </div>
+                    <div>
+                        <div id="challenge1-result"></div>
+                    </div>
+                </section>
+                <section id="challenge2" class="catgen">
+                    <h1 class="challenge2 title">Challenge 2&colon;&nbsp;Cat Generator</h1>
+                    <div class="challenge2 buttons">
+                        <button class="challenge2 generate" onclick="generateCat()">Generate Cat</button>
+                        <button class="challenge3 reset2" onclick="reset2()">Reset</button>
+                    </div>
+                    <div id="cat-container">
+                        
+                    </div>
+                </section>
+                <section id="challenge3" class="rpsgame">
+                    <h1 class="challenge3 title">Challenge 3&colon;&nbsp;Rock, Paper, Scissors</h1>
+                    <div id="player-container" class="images">
+                        <div class="rock">
+                            <img id="rock" class="rpsimages" src="images/rock.png" alt="rock" width="100px" height="100px" onclick="playerSelect(this)">
+                        </div>
+                        <div class="paper">
+                            <img id="paper" class="rpsimages" src="images/paper.png" alt="paper" width="100px" height="100px" onclick="playerSelect(this)">
+                        </div>
+                        <div class="scissor">
+                            <img id="scissor" class="rpsimages" src="images/scissor.png" alt="scissor" width="100px" height="100px" onclick="playerSelect(this)">
+                        </div>                     
+                    </div>
+                    
+                </section>
+                <section id="separate-container-challenge3">
+                    <div id="restart-container">
+                        <button id="restart" onclick="restart()">Restart</button>
+                    </div>
+                </section>
+            </div>
+            <script src="js/script.js"></script>
+        </body>
+    </html>
