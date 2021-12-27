@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Project</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <main id="main-container">
+        <section id="ch1-sec">
+            <div id="ch1-head">
+                <h2 id="ch1-heading">Challenge 1&colon; Your Age in Days</h2>
+            </div>
+            <div id="ch1buttons-container">
+                <button id="clickme" onclick="ageInDays()">Click Me</button>
+                <button id="reset" onclick="reset()">Reset</button>
+            </div>
+        </section>
+
+        <section id="ch2-sec">
+            <div id="ch2-head">
+                <h2 id="ch2-heading">Challenge 2&colon; Cat Generator</h2>
+            </div>
+            <div id="ch2button-container">
+                <button id="generate" onclick="generateCat()">Generate Cat</button>
+                <button id="delete" onclick="Delete()">Delete</button>
+            </div>
+        </section>
+
+        <section id="ch3-sec">
+            <div id="ch3-head">
+                <h2 id="ch3-heading">Challenge 3&colon; Rock, Paper, Scissors</h2>
+            </div>
+            <div id="rps-container">
+                <div id="rock-container">
+                    <img id="rock" src="images/rock.png" width="100px" height="100px" onclick="rpsMain(this)">
+                </div>
+                <div id="paper-container">
+                    <img id="paper" src="images/paper.png" width="100px" height="100px" onclick="rpsMain(this)">
+                </div>
+                <div id="scissors-container">
+                    <img id="scissors" src="images/scissor.png" width="100px" height="100px" onclick="rpsMain(this)">
+                </div>
+            </div>
+        </section>
+        <section id="ch4-sec">
+            <div id="ch4-head">
+                <h2 id="ch4-heading">Challenge 4&colon; Change the Color of All Buttons&excl;</h2>
+            </div>
+            <div id="ch4-container">
+                <div id="dropdown-container">
+                    <select id="dropdown-menu" onchange="colorSelection()">
+                        <option id="option-random" value="1" selected>Random</option>
+                        <option id="option-red" value="2">Red</option>
+                        <option id="option-green" value="3">Green</option>
+                        <option id="option-reset" value="4">Reset</option>
+                    </select>
+                </div>
+                <div id="ch4button-container">
+                    <button id="button1">Bing&excl;</button>
+                    <button id="button2">Yahoo&excl;</button>
+                    <button id="button3">Google&excl;</button>
+                    <button id="button4">Facebook&excl;</button>
+                </div>
+            </div>
+        </section>
+        <section id="ch5-sec">
+            <div id="ch5-head">
+                <h2 id="ch5-heading">Challenge 5&colon; Blackjack</h2>
+                <h3 id="ch5-subheading">Let&lsquo;s play</h3>
+            </div>
+            <div id="ch5-background" class="ch5-container">
+                <div id="player-container">
+                    <p>You:&nbsp;<span id="player-score">0</span></p>
+                    <div id="player-cards"></div>
+                </div>
+                <div id="dealer-container">
+                    <p>Dealer:&nbsp;<span id="dealer-score">0</span></p>
+                    <div id="dealer-cards"></div>
+                </div>
+                <div id="break"></div>
+                <div id="selection-container">
+                    <button id="hit">Hit</button>
+                    <button id="stand">Stand</button>
+                    <button id="deal">Deal</button>
+                </div>
+            </div>
+            <div id="score-chart-container">
+                <table>
+                    <thead>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </thead>
+                    <tbody>
+                        <td id="wins">0</td>
+                        <td id="losses">0</td>
+                        <td id="draws">0</td>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/blackjack.js"></script>
+</body>
+</html>

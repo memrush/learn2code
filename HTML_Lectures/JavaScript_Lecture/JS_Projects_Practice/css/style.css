@@ -1,0 +1,381 @@
+body {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: sans-serif;
+    max-width: 100%;
+   
+}
+
+main {
+    border: solid black 1px;
+    width: 60%;
+    height: auto;
+}
+
+/* h2 {
+    width: 100%;
+} */
+
+#ch1-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#ch1-head {
+    width: 100%;
+    height: auto;
+    border-bottom: solid 1px;
+}
+
+#ch1buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border-bottom: solid black 1px;
+}
+
+#clickme {
+    margin-right: 50px;
+    background-color: rgb(0, 119, 255);
+}
+
+#reset {
+    margin-left: 50px;
+    background-color: crimson;
+}
+
+button {
+    color: white;
+    font-weight: 900;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#h2-answer {
+    border: solid red 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 40%;
+    color: red;
+    font-weight: bold;
+}
+
+#ch2-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+#ch2-head {
+    text-align: center;
+    border: solid black 1px;
+    width: 100%;
+}
+
+#ch2button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+    padding-bottom: 40px;
+    border-bottom: solid black 1px;
+}
+
+#generate {
+    margin-left: 50px;
+    background-color:forestgreen
+}
+
+#delete {
+    margin-right: 50px;
+    background-color: crimson;
+}
+
+#cat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;   
+    margin-bottom: 30px;
+}
+
+.cat {
+    box-shadow: 5px 7px 3px 1px rgb(250, 6, 238);
+    margin: 10px;
+}
+
+#ch3-sec {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#ch3-head {
+    text-align: center;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+}
+
+#rps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: solid black 1px;
+}
+
+#rock:hover {
+    box-shadow: 2px 1px 5px 10px rgb(6, 250, 47);
+}
+
+#paper:hover {
+    box-shadow: 2px 1px 5px 10px rgb(6, 250, 47);
+}
+
+#scissors:hover {
+    box-shadow: 2px 1px 5px 10px rgb(6, 250, 47);
+}
+
+.result {
+    margin-top: 50px;
+    border: solid red 2px;
+    width: 40%;
+}
+
+#result-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#result-bot {
+    color: red;
+}
+
+#result-player {
+    color: green;
+}
+
+#result-tie {
+    color: yellow;
+}
+
+#ch4-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    flex-basis: auto;
+}
+
+#ch4-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+#dropdown-container {
+    flex-grow: 1;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#ch4button-container {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 3;   
+}
+
+#ch4-head {
+    border-bottom: solid black 1px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#button1 {
+    background-color: blue;
+}
+#button2 {
+    background-color: red;
+}
+#button3 {
+    background-color: orange;
+}
+#button4 {
+    background-color: green;
+}
+
+.green {
+    background-color: green !important;
+}
+
+.red {
+    background-color: red  !important;
+}
+
+.blue {
+    background-color: blue !important;
+}
+
+.orange {
+    background-color: orange !important;
+}
+
+#ch5-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#ch5-head {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#ch5-heading {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+#ch5-subheading {
+    margin: 0 0 15px 0;
+    width: 100%;
+    text-align: center;
+}
+
+#ch5-background {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url('../images/bj.jpg');
+    width: 100%;
+    height: auto;
+}
+
+#player-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    border: solid black 1px;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    width: 500px;
+    justify-content: center;
+    height: auto;
+}
+
+#dealer-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    border: solid black 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 500px;
+    height: auto;
+}
+
+#break {
+    flex-basis: 100%;
+    height: 0;
+    margin-top: 0;
+}
+
+#selection-container {
+    border: solid black 2px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 40px;
+}
+
+#hit {
+    background-color: blue;
+}
+
+#stand {
+    color: black;
+    background-color: orange;
+}
+
+#deal {
+    background-color: red;
+}
+
+p {
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#player-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: auto;
+}
+
+.cards {
+    width: 100px;
+    height: 120px;
+}
+
+#dealer-cards {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+}
+
+#hit:hover {
+    box-shadow: 1px 1px 5px 5px rgb(0, 119, 255);
+}
+
+#stand:hover {
+    box-shadow: 1px 1px 5px 5px rgb(255, 196, 0);
+}
+
+#deal:hover {
+    box-shadow: 1px 1px 5px 5px rgb(251, 5, 5);
+}
+
+#dealer-cards {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#player-cards {
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+#dealer-cards img:first-child {
+    visibility: hidden;
+}
+
+
+
